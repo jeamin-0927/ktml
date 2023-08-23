@@ -1,0 +1,31 @@
+{
+  "name": "@jeamxn/ktml",
+  "description": "Korean HyperText Markup Language",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeamin-0927/ktml"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn build:tsc && yarn build:js",
+    "build:tsc": "yarn tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "clean": "rm -rf dist"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.4",
+    "esbuild": "^0.19.2",
+    "typescript": "^5.1.6"
+  }
+}
