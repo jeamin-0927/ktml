@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["const newLog = (message: string) => {\n\tconsole.log(message);\n};\n\nexport { newLog };"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,YAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAME,EAAUE,GAAoB,CACnC,QAAQ,IAAIA,CAAO,CACpB",
+  "names": ["src_exports", "__export", "newLog", "__toCommonJS", "message"]
+}
