@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/index.ts"],
-  "sourcesContent": ["const newLog = (message: string) => {\n\tconsole.log(message);\n};\n\nexport { newLog };"],
-  "mappings": "AAAA,IAAMA,EAAUC,GAAoB,CACnC,QAAQ,IAAIA,CAAO,CACpB",
-  "names": ["newLog", "message"]
-}

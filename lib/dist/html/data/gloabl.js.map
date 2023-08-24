@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/html/data/gloabl.ts"],
+  "sourcesContent": ["const global = Object.entries({\n\t\"<!DOCTYPE html>\": \"<!\uBB38\uC11C \uC885\uB958: \uD55C\uAE00 \uB9C8\uD06C\uC5C5 \uC5B8\uC5B4>\"\n});\n\nexport default global;"],
+  "mappings": "AAAA,IAAMA,EAAS,OAAO,QAAQ,CAC7B,kBAAmB,4EACpB,CAAC,EAEMC,EAAQD",
+  "names": ["global", "gloabl_default"]
+}

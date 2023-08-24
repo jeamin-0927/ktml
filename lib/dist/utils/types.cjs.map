@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/utils/types.ts"],
+  "sourcesContent": ["export type File = {\n\tfilePath: string;\n\tcontent: string;\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["types_exports", "__toCommonJS"]
+}
