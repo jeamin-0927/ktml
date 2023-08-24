@@ -6,7 +6,7 @@ const type = process.argv[2] === "encode" ? encode :
               process.argv[2] === "decode" ? decode : () => {};
 
 console.clear();
-console.log(`😏  한글 마크업 언어 v.1.1.0 😏`);
+console.log(`😏  한글 마크업 언어 v.1.1.1 😏`);
 console.log();
 
 type(dir);
