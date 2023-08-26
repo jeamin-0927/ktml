@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/base.ts"],
+  "sourcesContent": ["const data = {\n  en: \"base\",\n  kr: \"\uAE30\uBCF8\",\n  attributes: [\n    {\n      en: \"href\",\n      kr: \"\uC5F0\uACB0\",\n      children: []\n    },\n    {\n      en: \"target\",\n      kr: \"\uB300\uC0C1\",\n      children: [\n        {\n          en: \"_blank\",\n          kr: \"\uC0C8\uCC3D\"\n        },\n        {\n          en: \"_parent\",\n          kr: \"\uBD80\uBAA8\"\n        },\n        {\n          en: \"_self\",\n          kr: \"\uC790\uC2E0\"\n        },\n        {\n          en: \"_top\",\n          kr: \"\uCD5C\uC0C1\uC704\"\n        }\n      ]\n    }\n  ]\n}\n\nexport default data;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY;AAAA,IACV;AAAA,MACE,IAAI;AAAA,MACJ,IAAI;AAAA,MACJ,UAAU,CAAC;AAAA,IACb;AAAA,IACA;AAAA,MACE,IAAI;AAAA,MACJ,IAAI;AAAA,MACJ,UAAU;AAAA,QACR;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,QACA;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,QACA;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,QACA;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,MACF;AAAA,IACF;AAAA,EACF;AACF;AAEA,IAAO,eAAQ;",
+  "names": []
+}

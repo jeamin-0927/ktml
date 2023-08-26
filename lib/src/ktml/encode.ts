@@ -3,7 +3,7 @@ import readFile from "../utils/readFile";
 import writeFile from "../utils/writeFile";
 
 import elements from "./data/elements";
-import attributes from "./data/attributes";
+import globalAttributes from "./data/globalAttributes";
 import global from "./data/gloabl";
 
 const encode = async ( 
@@ -13,7 +13,7 @@ const encode = async (
 
   const newElements = [...elements].sort((a, b) => b[0].length - a[0].length);
   const newGlobal = [...global].sort((a, b) => b[0].length - a[0].length);
-  const newAttributes = [...attributes].sort((a, b) => b[0].length - a[0].length);
+  const newAttributes = [...globalAttributes].sort((a, b) => b[0].length - a[0].length);
 
   for(const file of list) {
     for(const [htmlGlobal, ktmlGlobal] of newGlobal) {

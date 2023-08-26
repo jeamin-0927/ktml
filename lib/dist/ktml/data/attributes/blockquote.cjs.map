@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/blockquote.ts"],
+  "sourcesContent": ["const data = {\n  en: \"blockquote\",\n  kr: \"\uC778\uC6A9\uAD6C\",\n  attributes: [\n    {\n      en: \"cite\",\n      kr: \"\uC778\uC6A9\uBB38\",\n      children: []\n    }\n  ]\n}\n\nexport default data;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY;AAAA,IACV;AAAA,MACE,IAAI;AAAA,MACJ,IAAI;AAAA,MACJ,UAAU,CAAC;AAAA,IACb;AAAA,EACF;AACF;AAEA,IAAO,qBAAQ;",
+  "names": []
+}
