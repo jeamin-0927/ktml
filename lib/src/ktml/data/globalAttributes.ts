@@ -1,4 +1,4 @@
-const attributes = Object.entries({
+const globalAttributes = Object.entries({
   // Global Attributes (events)
   "onabort": "중단시",
   "onautocomplete": "자동완성시",
@@ -98,6 +98,8 @@ const attributes = Object.entries({
   "title": "제목",
   "translate": "번역",
   "virtualkeyboardpolicy": "가상키보드정책",
+
+  
 });
 
-export default attributes;
+export default globalAttributes;

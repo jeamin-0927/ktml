@@ -2,31 +2,43 @@ import { File } from "../utils/types";
 import readFile from "../utils/readFile";
 import writeFile from "../utils/writeFile";
 
-import elements from "./data/elements";
-import attributes from "./data/attributes";
+import * as elements from "./data/attributes";
+import globalAttr from "./data/attributes/global";
 import global from "./data/gloabl";
 
-const newElements = [...elements].sort((a, b) => b[1].length - a[1].length);
+const elementsList = Object.values(elements);
 const newGlobal = [...global].sort((a, b) => b[1].length - a[1].length);
-const newAttributes = [...attributes].sort((a, b) => b[1].length - a[1].length);
 
 export const decodeFile = (
   content: string
 ) => {
-  for(const [htmlGlobal, ktmlGlobal] of newGlobal) {
-    const regex = new RegExp(ktmlGlobal, "g");
-    content = content.replace(regex, htmlGlobal);
+  for(const [html, ktml] of newGlobal) {
+    const regex = new RegExp(ktml, "g");
+    content = content.replace(regex, html);
   }
-  for(const [htmlElements, ktmlElements] of newElements) {
-    const regex1 = new RegExp(`<${ktmlElements}`, "g");
-    const regex2 = new RegExp(`</${ktmlElements}`, "g");
-    content = content.replace(regex1, `<${htmlElements}`);
-    content = content.replace(regex2, `</${htmlElements}`);
+
+  for(const attribute of globalAttr) {
+    const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, 'g');
+    content = content.replace(regex, `<$1${attribute.en}$2>`);
   }
-  for(const [htmlAttributes, ktmlAttributes] of newAttributes) {
-    const regex = new RegExp(`<([^>]*)${ktmlAttributes}([^>]*)>`, 'g');
-    content = content.replace(regex, `<$1${htmlAttributes}$2>`);
+
+  for(const element of elementsList) {
+    const regex1 = new RegExp(`<${element.kr}`, "g");
+    const regex2 = new RegExp(`</${element.kr}`, "g");
+    content = content.replace(regex1, `<${element.en}`);
+    content = content.replace(regex2, `</${element.en}`);
+
+    for(const attribute of element.attributes) {
+      const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, 'g');
+      content = content.replace(regex, `<$1${attribute.en}$2>`);
+
+      for(const child of attribute.children) {
+        const regex = new RegExp(`(?<=<[^>]*=")${child.kr}(?="[^>]*>)`, 'g');
+        content = content.replace(regex, child.en);
+      }
+    }
   }
+
   return content;
 }
 

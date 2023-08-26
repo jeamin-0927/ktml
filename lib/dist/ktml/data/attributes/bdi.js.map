@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/bdi.ts"],
+  "sourcesContent": ["const data = {\n  en: \"bdi\",\n  kr: \"\uC591\uBC29\uD5A5\uD14D\uC2A4\uD2B8\",\n  attributes: [\n  ]\n}\n\nexport default data;"],
+  "mappings": ";AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CACZ;AACF;AAEA,IAAO,cAAQ;",
+  "names": []
+}

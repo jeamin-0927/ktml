@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/utils/types.ts"],
-  "sourcesContent": ["export type File = {\n\tfilePath: string;\n\tcontent: string;\n}\n"],
+  "sourcesContent": ["export type File = {\n  filePath: string;\n  content: string;\n}\n"],
   "mappings": ";;;;;;;;;;;;;;;;AAAA;AAAA;",
   "names": []
 }
