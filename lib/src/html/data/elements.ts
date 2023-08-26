@@ -57,7 +57,7 @@ const elements = Object.entries({
 	"label": "딱지",
 	"legend": "범례",
 	"li": "목록",
-	"link": "링크",
+	"link": "연결",
 	"main": "주요",
 	"map": "약도",
 	"mark": "표시",

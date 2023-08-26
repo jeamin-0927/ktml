@@ -3,7 +3,9 @@ const attributes = Object.entries({
   "autocapitalize": "자동대문자",
   "autofocus": "자동초점",
   "class": "계층",
+  "content": "내용",
   "contenteditable": "내용편집여부",
+  "charset": "문자묶음",
   "dir": "방향",
   "draggable": "드래그여부",
   "enterkeyhint": "엔터키힌트",
@@ -18,6 +20,7 @@ const attributes = Object.entries({
   "itemref": "항목참조",
   "itemscope": "항목범위",
   "itemtype": "항목유형",
+  "initial-scale": "초기축척",
   "lang": "언어",
   "nonce": "임시",
   "part": "부분",
@@ -28,7 +31,9 @@ const attributes = Object.entries({
   "tabindex": "묶음순서",
   "title": "제목",
   "translate": "번역",
-  "virtualkeyboardpolicy": "가상키보드정책"
+  "virtualkeyboardpolicy": "가상키보드정책",
+  "src": "주소",
+  "name": "이름",
 });
 
 export default attributes;

@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../../src/html/data/gloabl.ts"],
   "sourcesContent": ["const global = Object.entries({\n\t\"<!DOCTYPE html>\": \"<!\uBB38\uC11C \uC885\uB958: \uD55C\uAE00 \uB9C8\uD06C\uC5C5 \uC5B8\uC5B4>\"\n});\n\nexport default global;"],
-  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAMI,EAAS,OAAO,QAAQ,CAC7B,kBAAmB,4EACpB,CAAC,EAEMF,EAAQE",
-  "names": ["gloabl_exports", "__export", "gloabl_default", "__toCommonJS", "global"]
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,SAAS,OAAO,QAAQ;AAAA,EAC7B,mBAAmB;AACpB,CAAC;AAED,IAAO,iBAAQ;",
+  "names": []
 }
