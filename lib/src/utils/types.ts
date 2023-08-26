@@ -1,4 +1,4 @@
 export type File = {
-	filePath: string;
-	content: string;
+  filePath: string;
+  content: string;
 }
