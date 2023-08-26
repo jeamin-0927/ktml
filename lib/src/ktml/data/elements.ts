@@ -96,7 +96,7 @@ const elements = Object.entries({
 	"source": "원천",
 	"span": "범위",
 	"strong": "강조",
-	"style": "스타일",
+	"style": "꾸미기",
 	"sub": "아래첨자",
 	"summary": "요약",
 	"sup": "위첨자",

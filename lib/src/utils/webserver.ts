@@ -44,12 +44,6 @@ const start = () => {
 	console.log();
 }
 
-export const stop = () => {
-	server.close();
-	console.log("🛑 서버 :: 웹 서버가 종료됐어요.");
-	console.log();
-}
-
 const webserver = async () => {
 	server.on('request', request);
 	server.listen(3000, start);

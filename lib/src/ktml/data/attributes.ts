@@ -27,7 +27,7 @@ const attributes = Object.entries({
   "popover": "띄우기",
   "slot": "장소",
   "spellcheck": "철자확인",
-  "style": "스타일",
+  "style": "꾸미기",
   "tabindex": "묶음순서",
   "title": "제목",
   "translate": "번역",

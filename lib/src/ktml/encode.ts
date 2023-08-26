@@ -1,11 +1,10 @@
 import { File } from "../utils/types";
+import readFile from "../utils/readFile";
+import writeFile from "../utils/writeFile";
 
 import elements from "./data/elements";
 import attributes from "./data/attributes";
 import global from "./data/gloabl";
-
-import readFile from "../utils/readFile";
-import writeFile from "../utils/writeFile";
 
 const encode = async ( 
 	path: string 
