@@ -11,3 +11,5 @@ export { default as bdi } from './bdi';
 export { default as bdo } from './bdo';
 export { default as blockquote } from './blockquote';
 export { default as body } from './body';
+export { default as br } from './br';
+export { default as button } from './button';

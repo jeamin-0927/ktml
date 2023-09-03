@@ -23,22 +23,31 @@ export const decodeFile = (
   }
 
   for(const element of elementsList) {
-    const regex1 = new RegExp(`<${element.kr}`, "g");
-    const regex2 = new RegExp(`</${element.kr}`, "g");
-    content = content.replace(regex1, `<${element.en}`);
-    content = content.replace(regex2, `</${element.en}`);
-
-    for(const attribute of element.attributes) {
-      const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, 'g');
-      content = content.replace(regex, `<$1${attribute.en}$2>`);
-
-      for(const child of attribute.children) {
-        const regex = new RegExp(`(?<=<[^>]*=")${child.kr}(?="[^>]*>)`, 'g');
-        content = content.replace(regex, child.en);
+    const pattern = new RegExp(`<(/?)${element.kr}[^>]*>`, "g");
+    const originMatches = content.match(pattern);
+    const matches = content.match(pattern);
+    if(!matches || !originMatches) continue;
+    for(let i = 0; i < matches.length; i++) {
+      const regex = new RegExp(`<(/?)${element.kr}`, "g");
+      matches[i] = matches[i].replace(regex, `<$1${element.en}`);
+      for(const attribute of element.attributes.sort((a, b) => b.kr.length - a.kr.length)) {
+        const pattern = new RegExp(`${attribute.kr}="([^"]*)"`, 'g');
+        const originMatchesAttribute = matches[i].match(pattern);
+        const matchesAttribute = matches[i].match(pattern);
+        if(!originMatchesAttribute || !matchesAttribute) continue;
+        for(let j = 0; j < originMatchesAttribute.length; j++) {
+          const regex = new RegExp(`${attribute.kr}`, 'g');
+          matchesAttribute[j] = originMatchesAttribute[j].replace(regex, `${attribute.en}`);
+          for(const child of attribute.children) {
+            const regex = new RegExp(`"${child.kr}"`, 'g');
+            matchesAttribute[j] = matchesAttribute[j].replace(regex, `"${child.en}"`);
+          }
+          matches[i] = matches[i].replace(originMatchesAttribute[j], matchesAttribute[j]);
+        }
       }
+      content = content.replace(originMatches[i], matches[i]);
     }
   }
-
   return content;
 }
 
