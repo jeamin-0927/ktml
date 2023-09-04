@@ -13,3 +13,7 @@ export { default as blockquote } from './blockquote';
 export { default as body } from './body';
 export { default as br } from './br';
 export { default as button } from './button';
+export { default as canvas } from './canvas';
+export { default as caption } from './caption';
+export { default as cite } from './cite';
+export { default as code } from './code';
