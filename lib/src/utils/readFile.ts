@@ -30,6 +30,7 @@ const readFile = async (
         console.log(`📚 읽기 :: ./${filePath} (${list[list.length - 1].content.length.toLocaleString()} 바이트)`);
       }
     }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     catch(err: any) {
       console.error(`📚 읽기 :: 오류: ${err.message}`);
     }
