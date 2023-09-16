@@ -20,11 +20,11 @@ const readFile = async (
           continue;
         } 
   
-        if (file.split('.').pop() !== extension) continue;
+        if (file.split(".").pop() !== extension) continue;
   
         list.push({
           filePath: filePath.replace(path, ""),
-          content: (await fs.readFile(filePath, 'utf-8')).replace(/\r?\n|\t|\r/g, "")
+          content: (await fs.readFile(filePath, "utf-8")).replace(/\r?\n|\t|\r/g, "")
         });
 
         console.log(`📚 읽기 :: ./${filePath} (${list[list.length - 1].content.length.toLocaleString()} 바이트)`);
@@ -33,7 +33,7 @@ const readFile = async (
     catch(err: any) {
       console.error(`📚 읽기 :: 오류: ${err.message}`);
     }
-  }
+  };
   await check(path);
   console.log(`📚 읽기 :: ${list.length.toLocaleString()}개의 파일을 읽었어요.`);
   console.log();

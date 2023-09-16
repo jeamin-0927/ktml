@@ -3,6 +3,6 @@ const data = {
   kr: "주소",
   attributes: [
   ]
-}
+};
 
 export default data;

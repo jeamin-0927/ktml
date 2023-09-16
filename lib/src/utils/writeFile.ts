@@ -13,7 +13,7 @@ const writeFile = async (
     path = path.replace("/", "");
 
     try{
-      await fs.rm(`./build`, { recursive: true });
+      await fs.rm("./build", { recursive: true });
     }
     catch(e) {
       // console.log(e);

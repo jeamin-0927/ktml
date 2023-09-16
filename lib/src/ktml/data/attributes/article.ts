@@ -3,6 +3,6 @@ const data = {
   kr: "기사",
   attributes: [
   ]
-}
+};
 
 export default data;

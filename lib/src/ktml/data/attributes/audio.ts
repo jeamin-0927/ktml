@@ -110,6 +110,6 @@ const data = {
       children: []
     }
   ]
-}
+};
 
 export default data;

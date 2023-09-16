@@ -1,10 +1,10 @@
-import { File } from "../utils/types";
 import readFile from "../utils/readFile";
+import { File } from "../utils/types";
 import writeFile from "../utils/writeFile";
 
 import elements from "./data/elements";
-import globalAttributes from "./data/globalAttributes";
 import global from "./data/gloabl";
+import globalAttributes from "./data/globalAttributes";
 
 const encode = async ( 
   path: string 
@@ -23,10 +23,10 @@ const encode = async (
     for(const [htmlElements, ktmlElements] of newElements) {
       file.content = file.content.replace(new RegExp(`<${htmlElements}`, "g"), `<${ktmlElements}`);
       file.content = file.content.replace(new RegExp(`</${htmlElements}`, "g"), `</${ktmlElements}`);
-    };
+    }
 
     for(const [htmlAttributes, ktmlAttributes] of newAttributes) {
-      file.content = file.content.replace(new RegExp(`<([^>]*)${htmlAttributes}([^>]*)>`, 'g'), `<$1${ktmlAttributes}$2>`);
+      file.content = file.content.replace(new RegExp(`<([^>]*)${htmlAttributes}([^>]*)>`, "g"), `<$1${ktmlAttributes}$2>`);
     }
 
     console.log(`🛠️  암호화 :: .${file.filePath} (${file.content.length.toLocaleString()} 바이트)`);
@@ -37,6 +37,6 @@ const encode = async (
   await writeFile(path, list, "html", "ktml");
 
   return list;
-}
+};
 
 export default encode;

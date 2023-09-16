@@ -3,6 +3,6 @@ const data = {
   kr: "굵게",
   attributes: [
   ]
-}
+};
 
 export default data;

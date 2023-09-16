@@ -1,5 +1,5 @@
-import { File } from "../utils/types";
 import readFile from "../utils/readFile";
+import { File } from "../utils/types";
 import writeFile from "../utils/writeFile";
 
 import * as elements from "./data/attributes";
@@ -18,7 +18,7 @@ export const decodeFile = (
   }
 
   for(const attribute of globalAttr) {
-    const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, 'g');
+    const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, "g");
     content = content.replace(regex, `<$1${attribute.en}$2>`);
   }
 
@@ -31,15 +31,15 @@ export const decodeFile = (
       const regex = new RegExp(`<(/?)${element.kr}`, "g");
       matches[i] = matches[i].replace(regex, `<$1${element.en}`);
       for(const attribute of element.attributes.sort((a, b) => b.kr.length - a.kr.length)) {
-        const pattern = new RegExp(`${attribute.kr}="([^"]*)"`, 'g');
+        const pattern = new RegExp(`${attribute.kr}="([^"]*)"`, "g");
         const originMatchesAttribute = matches[i].match(pattern);
         const matchesAttribute = matches[i].match(pattern);
         if(!originMatchesAttribute || !matchesAttribute) continue;
         for(let j = 0; j < originMatchesAttribute.length; j++) {
-          const regex = new RegExp(`${attribute.kr}`, 'g');
+          const regex = new RegExp(`${attribute.kr}`, "g");
           matchesAttribute[j] = originMatchesAttribute[j].replace(regex, `${attribute.en}`);
           for(const child of attribute.children) {
-            const regex = new RegExp(`"${child.kr}"`, 'g');
+            const regex = new RegExp(`"${child.kr}"`, "g");
             matchesAttribute[j] = matchesAttribute[j].replace(regex, `"${child.en}"`);
           }
           matches[i] = matches[i].replace(originMatchesAttribute[j], matchesAttribute[j]);
@@ -49,7 +49,7 @@ export const decodeFile = (
     }
   }
   return content;
-}
+};
 
 const decode = async ( 
   path: string 
@@ -66,6 +66,6 @@ const decode = async (
   await writeFile(path, list, "ktml", "html");
 
   return list;
-}
+};
 
 export default decode;
