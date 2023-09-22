@@ -1,16 +1,16 @@
 import * as fs from "fs";
 
-import ktmlDecode from "./ktml/decode";
-import ktmlEncode from "./ktml/encode";
+import htmlDecode from "./html/decode";
+import htmlEncode from "./html/encode";
 import { File } from "./utils/types";
 import webserver from "./utils/webserver";
 
 const decodes = async (dir: string) => Promise.all([
-  ktmlDecode(dir),
+  htmlDecode(dir),
 ]);
 
 const encodes = async (dir: string) => Promise.all([
-  ktmlEncode(dir),
+  htmlEncode(dir),
 ]);
 
 (async () => {
