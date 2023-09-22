@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../src/ktml/data/attributes/article.ts"],
-  "sourcesContent": ["const data = {\n  en: \"article\",\n  kr: \"\uAE30\uC0AC\",\n  attributes: [\n  ]\n}\n\nexport default data;"],
+  "sourcesContent": ["const data = {\n  en: \"article\",\n  kr: \"\uAE30\uC0AC\",\n  attributes: [\n  ]\n};\n\nexport default data;"],
   "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CACZ;AACF;AAEA,IAAO,kBAAQ;",
   "names": []
 }

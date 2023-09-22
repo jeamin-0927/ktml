@@ -16,12 +16,10 @@ export const decodeFile = (
     const regex = new RegExp(ktml, "g");
     content = content.replace(regex, html);
   }
-
   for(const attribute of globalAttr) {
     const regex = new RegExp(`<([^>]*)${attribute.kr}([^>]*)>`, "g");
     content = content.replace(regex, `<$1${attribute.en}$2>`);
   }
-
   for(const element of elementsList) {
     const pattern = new RegExp(`<(/?)${element.kr}[^>]*>`, "g");
     const originMatches = content.match(pattern);
@@ -55,16 +53,12 @@ const decode = async (
   path: string 
 ): Promise<File[]> => {
   const list = await readFile(path, "ktml");
-
   for(const file of list) {
     file.content = decodeFile(file.content);
     console.log(`🛠️  복호화 :: .${file.filePath} (${file.content.length.toLocaleString()} 바이트)`);
   }
-  console.log(`🛠️  복호화 :: ${list.length}개의 파일을 복호화했어요.`);
-  console.log();
-
+  console.log(`🛠️  복호화 :: ${list.length}개의 파일을 복호화했어요.\n`);
   await writeFile(path, list, "ktml", "html");
-
   return list;
 };
 

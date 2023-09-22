@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/div.ts"],
+  "sourcesContent": ["const data = {\n  en: \"div\",\n  kr: \"\uAD6C\uD68D\",\n  attributes: []\n};\n\nexport default data;"],
+  "mappings": ";AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CAAC;AACf;AAEA,IAAO,cAAQ;",
+  "names": []
+}

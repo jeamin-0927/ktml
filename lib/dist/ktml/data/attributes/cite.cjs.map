@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/cite.ts"],
+  "sourcesContent": ["const data = {\n  en: \"cite\",\n  kr: \"\uC778\uC6A9\",\n  attributes: []\n};\n\nexport default data;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CAAC;AACf;AAEA,IAAO,eAAQ;",
+  "names": []
+}

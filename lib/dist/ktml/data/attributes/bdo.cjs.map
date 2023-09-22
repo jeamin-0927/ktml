@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../src/ktml/data/attributes/bdo.ts"],
-  "sourcesContent": ["const data = {\n  en: \"bdo\",\n  kr: \"\uD14D\uC2A4\uD2B8\uBC29\uD5A5\",\n  attributes: [\n    {\n      en: \"dir\",\n      kr: \"\uBC29\uD5A5\",\n      children: [\n        {\n          en: \"ltr\",\n          kr: \"\uC67C\uCABD\uC5D0\uC11C\uC624\uB978\uCABD\"\n        },\n        {\n          en: \"rtl\",\n          kr: \"\uC624\uB978\uCABD\uC5D0\uC11C\uC67C\uCABD\"\n        }\n      ]\n    }\n  ]\n}\n\nexport default data;"],
+  "sourcesContent": ["const data = {\n  en: \"bdo\",\n  kr: \"\uD14D\uC2A4\uD2B8\uBC29\uD5A5\",\n  attributes: [\n    {\n      en: \"dir\",\n      kr: \"\uBC29\uD5A5\",\n      children: [\n        {\n          en: \"ltr\",\n          kr: \"\uC67C\uCABD\uC5D0\uC11C\uC624\uB978\uCABD\"\n        },\n        {\n          en: \"rtl\",\n          kr: \"\uC624\uB978\uCABD\uC5D0\uC11C\uC67C\uCABD\"\n        }\n      ]\n    }\n  ]\n};\n\nexport default data;"],
   "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY;AAAA,IACV;AAAA,MACE,IAAI;AAAA,MACJ,IAAI;AAAA,MACJ,UAAU;AAAA,QACR;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,QACA;AAAA,UACE,IAAI;AAAA,UACJ,IAAI;AAAA,QACN;AAAA,MACF;AAAA,IACF;AAAA,EACF;AACF;AAEA,IAAO,cAAQ;",
   "names": []
 }

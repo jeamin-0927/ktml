@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/dd.ts"],
+  "sourcesContent": ["const data = {\n  en: \"dd\",\n  kr: \"\uC124\uBA85\",\n  attributes: []\n};\n\nexport default data;"],
+  "mappings": ";AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CAAC;AACf;AAEA,IAAO,aAAQ;",
+  "names": []
+}

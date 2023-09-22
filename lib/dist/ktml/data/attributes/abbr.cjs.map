@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../src/ktml/data/attributes/abbr.ts"],
-  "sourcesContent": ["const data = {\n  en: \"abbr\",\n  kr: \"\uC57D\uC5B4\",\n  attributes: [\n  ]\n}\n\nexport default data;"],
+  "sourcesContent": ["const data = {\n  en: \"abbr\",\n  kr: \"\uC57D\uC5B4\",\n  attributes: [\n  ]\n};\n\nexport default data;"],
   "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CACZ;AACF;AAEA,IAAO,eAAQ;",
   "names": []
 }

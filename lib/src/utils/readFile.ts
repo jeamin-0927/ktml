@@ -1,6 +1,6 @@
-import { promises as fs } from "fs";
+import type { File } from "./types";
 
-import { File } from "./types";
+import { promises as fs } from "fs";
 
 const readFile = async ( 
   path: string,
@@ -14,19 +14,15 @@ const readFile = async (
       for (const file of files) {
         const filePath = `${innerPath}/${file}`;
         const stat = await fs.stat(filePath);
-  
         if (stat.isDirectory()) {
           await check(filePath);
           continue;
-        } 
-  
+        }
         if (file.split(".").pop() !== extension) continue;
-  
         list.push({
           filePath: filePath.replace(path, ""),
           content: (await fs.readFile(filePath, "utf-8")).replace(/\r?\n|\t|\r/g, "")
         });
-
         console.log(`📚 읽기 :: ./${filePath} (${list[list.length - 1].content.length.toLocaleString()} 바이트)`);
       }
     }
@@ -36,9 +32,7 @@ const readFile = async (
     }
   };
   await check(path);
-  console.log(`📚 읽기 :: ${list.length.toLocaleString()}개의 파일을 읽었어요.`);
-  console.log();
-
+  console.log(`📚 읽기 :: ${list.length.toLocaleString()}개의 파일을 읽었어요.\n`);
   return list;
 };
 

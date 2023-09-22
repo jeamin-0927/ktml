@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/ktml/data/attributes/datalist.ts"],
+  "sourcesContent": ["const data = {\n  en: \"datalist\",\n  kr: \"\uB370\uC774\uD130\uBAA9\uB85D\",\n  attributes: []\n};\n\nexport default data;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAM,OAAO;AAAA,EACX,IAAI;AAAA,EACJ,IAAI;AAAA,EACJ,YAAY,CAAC;AACf;AAEA,IAAO,mBAAQ;",
+  "names": []
+}
