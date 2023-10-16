@@ -49,3 +49,5 @@ export { default as hr } from "./hr";
 export { default as html } from "./html";
 export { default as i } from "./i";
 export { default as iframe } from "./iframe";
+export { default as img } from "./img";
+export { default as input } from "./input";
