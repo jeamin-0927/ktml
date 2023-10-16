@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "iframe",
   kr: "인라인프레임",
   attributes: [

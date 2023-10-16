@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "datalist",
   kr: "데이터목록",
   attributes: []

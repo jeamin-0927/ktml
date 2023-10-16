@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "del",
   kr: "삭제",
   attributes: [

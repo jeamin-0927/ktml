@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "colgroup",
   kr: "열그룹",
   attributes: [

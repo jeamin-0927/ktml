@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "bdo",
   kr: "텍스트방향",
   attributes: [

@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "fieldset",
   kr: "필드세트",
   attributes: [

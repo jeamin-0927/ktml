@@ -1,3 +1,16 @@
+export type Attribute = {
+  en: string;
+  kr: string;
+  attributes: {
+    en: string;
+    kr: string;
+    children: {
+      en: string;
+      kr: string;
+    }[];
+  }[];
+};
+
 export { default as a } from "./a";
 export { default as abbr } from "./abbr";
 export { default as address } from "./address";

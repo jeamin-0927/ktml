@@ -1,4 +1,6 @@
-const data = {
+import { Attribute } from ".";
+
+const data: Attribute = {
   en: "figcaption",
   kr: "모형설명",
   attributes: [
