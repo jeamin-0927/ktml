@@ -1,4 +1,4 @@
-import { Attribute } from ".";
+import type { Attribute } from "./types";
 
 const data: Attribute = {
   en: "figure",
